@@ -1,6 +1,8 @@
 from collections import namedtuple
 import pandas as pd
 import streamlit as st
+from stmol import showmol
+import py3Dmol
 
 """
 # Basic Smina Protein-ligand Docking (Re-Docking)
@@ -14,8 +16,6 @@ import streamlit as st
 
 with st.echo(code_location='below'):
     
-    from stmol import showmol
-    import py3Dmol
     # 1A2C
     # Structure of thrombin inhibited by AERUGINOSIN298-A from a BLUE-GREEN ALGA
     xyzview = py3Dmol.view(query='pdb:1A2C') 
