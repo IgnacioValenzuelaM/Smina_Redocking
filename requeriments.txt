@@ -6,4 +6,4 @@ rdkit
 py3dmol 
 spyrmsd 
 prody 
-stmol==0.0.9
+stmol
