@@ -8,4 +8,4 @@ dependencies:
   - spyrmsd 
   - prody 
   - stmol
-  - py3Dmol
+  - py3dmol
