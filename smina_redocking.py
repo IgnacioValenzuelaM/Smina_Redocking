@@ -1,7 +1,6 @@
 from collections import namedtuple
 import pandas as pd
 import streamlit as st
-from stmol import showmol
 import py3Dmol
 
 """
