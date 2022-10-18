@@ -1,0 +1,8 @@
+altair
+pandas
+streamlit
+smina 
+rdkit 
+py3dmol 
+spyrmsd 
+prody 
