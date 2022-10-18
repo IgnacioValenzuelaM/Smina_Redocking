@@ -2,8 +2,8 @@ altair
 pandas
 streamlit
 smina 
-rdkit 
-py3dmol 
+rdkit  
 spyrmsd 
 prody 
 stmol
+py3Dmol
