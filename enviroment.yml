@@ -1,0 +1,11 @@
+channles:
+  - conda-forge
+dependencies:
+  - pandas
+  - streamlit
+  - smina 
+  - rdkit  
+  - spyrmsd 
+  - prody 
+  - stmol
+  - py3Dmol
