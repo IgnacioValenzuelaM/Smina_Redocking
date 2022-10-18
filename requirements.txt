@@ -1,9 +1,0 @@
-altair
-pandas
-streamlit
-smina 
-rdkit  
-spyrmsd 
-prody 
-stmol
-py3Dmol
