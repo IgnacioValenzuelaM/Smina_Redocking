@@ -26,10 +26,10 @@ with st.echo(code_location='below'):
 
     # Receptor 
 
-    view.addModel(open('{0}_clean.pdb'.format(pdb_code),'r').read(),format='pdb')
-    Prot=view.getModel()
-    Prot.setStyle({'cartoon':{'arrows':True, 'tubes':True, 'style':'oval', 'color':'white'}})
-    view.addSurface(py3Dmol.VDW,{'opacity':0.6,'color':'white'})
+    #view.addModel(open('{0}_clean.pdb'.format(pdb_code),'r').read(),format='pdb')
+    #Prot=view.getModel()
+    #Prot.setStyle({'cartoon':{'arrows':True, 'tubes':True, 'style':'oval', 'color':'white'}})
+    #view.addSurface(py3Dmol.VDW,{'opacity':0.6,'color':'white'})
 
     # Reference Ligand
 
