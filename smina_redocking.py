@@ -17,12 +17,27 @@ with st.echo(code_location='below'):
     from rdkit import Chem
     from rdkit.Chem import AllChem, Draw
     import py3Dmol
-
+    
+    from stmol import showmol
+    import py3Dmol
+    # 1A2C
+    # Structure of thrombin inhibited by AERUGINOSIN298-A from a BLUE-GREEN ALGA
+    xyzview = py3Dmol.view(query='pdb:1A2C') 
+    xyzview.setStyle({'cartoon':{'color':'spectrum'}})
+    showmol(xyzview, height = 500,width=800)
+    
+    
+    
+    
+    
+    
+    
+    
     #Parameters
 
-    view = py3Dmol.view(query='pdb:1A2C')
-    view.removeAllModels()
-    view.setViewStyle({'style':'outline','color':'black','width':0.1})
+    #view = py3Dmol.view(query='pdb:1A2C')
+    #view.removeAllModels()
+    #view.setViewStyle({'style':'outline','color':'black','width':0.1})
 
     # Receptor 
 
@@ -48,12 +63,12 @@ with st.echo(code_location='below'):
     #print('Reference: Magenta | Smina Pose: Cyan')
     #print ('Score: {}'.format(results[0].GetProp('minimizedAffinity')))  # If change docking result above, change this value too
 
-    view.addModel(p,'mol')
-    x = view.getModel()
-    x.setStyle({},{'stick':{'colorscheme':'cyanCarbon','radius':0.2}})
+    #view.addModel(p,'mol')
+    #x = view.getModel()
+    #x.setStyle({},{'stick':{'colorscheme':'cyanCarbon','radius':0.2}})
 
 
     #Visualization
 
-    view.zoomTo()
-    view.show()
+    #view.zoomTo()
+    #view.show()
