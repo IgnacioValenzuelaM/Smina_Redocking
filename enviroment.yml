@@ -1,3 +1,4 @@
+name: Smina_Redocking
 channles:
   - conda-forge
 dependencies:
@@ -9,3 +10,5 @@ dependencies:
   - prody 
   - stmol
   - py3dmol
+- pip:
+  - streamlit
