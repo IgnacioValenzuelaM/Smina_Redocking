@@ -33,20 +33,20 @@ with st.echo(code_location='below'):
 
     # Reference Ligand
 
-    view.addModel(open('{0}_ligand.pdb'.format(pdb_code),'r').read(),format='pdb')
-    ref_m = view.getModel()
-    ref_m.setStyle({},{'stick':{'colorscheme':'magentaCarbon','radius':0.2}})
+    #view.addModel(open('{0}_ligand.pdb'.format(pdb_code),'r').read(),format='pdb')
+    #ref_m = view.getModel()
+    #ref_m.setStyle({},{'stick':{'colorscheme':'magentaCarbon','radius':0.2}})
 
     # Docking Result
 
-    results=Chem.SDMolSupplier('{0}_docking.sdf'.format(pdb_code))
+    #results=Chem.SDMolSupplier('{0}_docking.sdf'.format(pdb_code))
 
-    p=Chem.MolToMolBlock(results[1],False)  # [0] give you the first result from docking, to view another change this value
-    p2=Chem.MolToMolBlock(results[1],False)
+    #p=Chem.MolToMolBlock(results[1],False)  # [0] give you the first result from docking, to view another change this value
+    #p2=Chem.MolToMolBlock(results[1],False)
     # Print Score
 
-    print('Reference: Magenta | Smina Pose: Cyan')
-    print ('Score: {}'.format(results[0].GetProp('minimizedAffinity')))  # If change docking result above, change this value too
+    #print('Reference: Magenta | Smina Pose: Cyan')
+    #print ('Score: {}'.format(results[0].GetProp('minimizedAffinity')))  # If change docking result above, change this value too
 
     view.addModel(p,'mol')
     x = view.getModel()
